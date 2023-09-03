@@ -1,0 +1,62 @@
+.navbar {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(54, 59, 59);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    align-items: center;
+}
+
+.navbarname, .home, .link, .dropdown {
+    color: white;
+    padding-left: 15px;
+}
+
+.home, .link {
+    text-decoration: none;
+}
+
+.dropdown {
+    background-color: rgb(54, 59, 59);
+    border: none;
+    padding: 15px;
+    font-size: 24px;
+}
+
+.disabled {
+    color: lightblue;
+    padding-left: 15px;
+}
+
+.search-button:hover {
+    background-color: green;
+    color: white;
+}
+
+.search-container {
+    width: 100%;
+    text-align: right;
+}
+
+.search-bar {
+    height: 20px;
+    width: 1000;
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-button {
+    font-size: 20px;
+    background-color: rgb(54, 59, 59);
+    border: 2px solid rgb(0, 255, 0);
+    color: rgb(0, 255, 0);
+    border-radius: 5px;
+    float: right;
+    height: 40px;
+    width: 90px;
+    margin-top: 10px;
+    margin-right: 15px;
+}
