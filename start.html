@@ -1,36 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NavBar</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <!--L'esercizio consiglia di usare una lista non ordinata, ma durante la live abbiamo visto insieme
-    che era solo più scomodo-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Navbar</title>
+  </head>
+  <body>
+    <nav>
+      <div class="principale">
+        <h3 class="titolo">Navbar</h3>
+        <ul>
+          <li><a href="main.html">Home</a></li>
+          <li><a href="link.html">Link</a></li>
 
-    <ul class="navbar">
-        <a class="navbarname">Navbar</a>
+          <li>
+            <select id="dropdown" name="dropdown">
+              <option value="Opzione 1">Opzione 1</option>
+              <option value="Opzione 2">Opzione 2</option>
+              <option value="Opzione 3">Opzione 3</option>
+              <option value="Opzione 4">Opzione 4</option>
+              <option value="Opzione 5">Opzione 5</option>
+            </select>
+          </li>
 
-        <a href="#home" class="home">Home</a>
+          <li><button disabled>Disabled</button></li>
+        </ul>
+      </div>
 
-        <a href="#link" class="link">Link</a>
+      <div class="searchBar">
+        <input type="search" placeholder="Search" />
+        <button>Search</button>
+      </div>
+    </nav>
 
-        <select class="dropdown">
-            <option value="dropdown">Dropdown</option>
-            <option value="valore1">Valore 1</option>
-            <option value="valore2">Valore 2</option>
-            <option value="valore3">Valore 3</option>
-        </select>
-
-        <a class="disabled">Disabled</a>
-
-        <div class="search-container">
-            <input type="text" placeholder="Search" class="search-bar">
-
-            <button type="search" class="search-button">Search</button>
-        </div>
-    </ul>
-</body>
+    <main>
+      <h1>Lorem, ipsum dolor.</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+        corrupti sapiente minima illum, est quam magni quisquam nostrum, eos
+        beatae nulla quasi praesentium debitis esse libero deserunt? Adipisci
+        cum quaerat reiciendis ut exercitationem et voluptate explicabo, omnis
+        porro sit harum nihil optio, quisquam, in nostrum sed vitae accusamus.
+        Eius, repellendus labore consequatur minus inventore quidem? Eius,
+        reiciendis ex mollitia ratione accusantium debitis! Quis eveniet odio
+        magnam illo, vero voluptatem, ullam maiores sapiente laboriosam velit,
+        alias quia laborum distinctio sint cum ipsum necessitatibus obcaecati
+        quos voluptatum quo tempore voluptate!
+      </p>
+    </main>
+  </body>
 </html>

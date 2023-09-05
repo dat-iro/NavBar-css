@@ -1,62 +1,115 @@
-.navbar {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: rgb(54, 59, 59);
+html {
+    font-size: 18px;
+  }
+  
+  body {
+    margin: 0px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 24px;
-    align-items: center;
-}
-
-.navbarname, .home, .link, .dropdown {
-    color: white;
-    padding-left: 15px;
-}
-
-.home, .link {
-    text-decoration: none;
-}
-
-.dropdown {
-    background-color: rgb(54, 59, 59);
-    border: none;
-    padding: 15px;
-    font-size: 24px;
-}
-
-.disabled {
-    color: lightblue;
-    padding-left: 15px;
-}
-
-.search-button:hover {
-    background-color: green;
-    color: white;
-}
-
-.search-container {
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    background-color: #212529;
+    color: whitesmoke;
     width: 100%;
-    text-align: right;
-}
-
-.search-bar {
-    height: 20px;
-    width: 1000;
-    padding: 10px;
-    font-size: 20px;
-    border: 1px solid #ccc;
+    position: fixed;
+    z-index: 1;
+  }
+  
+  nav div {
+    display: flex;
+  }
+  
+  nav * {
+    margin: 3px;
+    padding: 5px;
+  }
+  
+  .principale h3 {
+    font-weight: 550;
+    font-size: 1.4rem;
+  }
+  ul,
+  li {
+    display: flex;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  .principale ul li * {
+    margin-left: 15px;
+    padding: 0px;
+  }
+  
+  .principale ul li a {
+    text-decoration: none;
+    color: rgb(170, 170, 170);
+    padding-top: 9px;
+  }
+  
+  .principale ul li *:hover {
+    text-decoration: underline;
+    background-color: none;
+  }
+  
+  .principale ul li *:active,
+  .principale ul li:first-of-type a:active,
+  #dropdown:active {
+    text-decoration: underline;
+    color: rgb(0, 0, 0);
+  }
+  
+  .principale ul li:first-of-type a {
+    color: whitesmoke;
+  }
+  
+  .principale ul li button[disabled] {
+    background: none;
+    color: grey;
+    border: none;
+    font-size: 1rem;
+    text-decoration: none;
+  }
+  
+  #dropdown {
+    background: none;
+    border: none;
+    color: rgb(170, 170, 170);
+    font-size: 1rem;
+  }
+  
+  #dropdown option {
+    background-color: #212529;
+  }
+  
+  .searchBar * {
     border-radius: 4px;
-}
-
-.search-button {
-    font-size: 20px;
-    background-color: rgb(54, 59, 59);
-    border: 2px solid rgb(0, 255, 0);
-    color: rgb(0, 255, 0);
-    border-radius: 5px;
-    float: right;
-    height: 40px;
-    width: 90px;
-    margin-top: 10px;
-    margin-right: 15px;
-}
+    font-size: 1rem;
+  }
+  
+  .searchBar input {
+    border: none;
+    padding-left: 15px;
+  }
+  
+  .searchBar button {
+    background: none;
+    border: 1px solid green;
+    color: green;
+    padding: 10px;
+  }
+  
+  .searchBar button:hover {
+    background-color: rgb(199, 199, 199);
+  }
+  
+  .searchBar button:active {
+    background-color: rgb(0, 0, 0);
+  }
+  
+  main {
+    padding-top: 60px;
+  }
